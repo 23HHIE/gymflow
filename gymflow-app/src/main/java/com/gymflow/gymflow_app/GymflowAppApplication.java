@@ -3,7 +3,7 @@ package com.gymflow.gymflow_app;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "com.gymflow")
 public class GymflowAppApplication {
 
 	public static void main(String[] args) {
