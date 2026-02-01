@@ -1,3 +1,16 @@
 spring:
   application:
-    name: gymflow-app
+    name: gymflow
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gymflow
+    username: gymflow
+    password: gymflow
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+server:
+  port: 8080
